@@ -1,0 +1,25 @@
+{
+  "name": "lesson-12-hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass scss -o css" ,
+    "watch-sass": "node-sass --watch scss -o css",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oxana2381/lesson-12-hw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oxana2381/lesson-12-hw/issues"
+  },
+  "homepage": "https://github.com/oxana2381/lesson-12-hw#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

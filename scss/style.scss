@@ -1,0 +1,950 @@
+@import '_reset';
+@import '_mixins';
+
+
+    
+    
+    .header__nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-top: 85px;
+        padding-left: 450px;
+    }
+
+       @media (max-width: 375px){
+           .header__nav{
+               display: none;
+       }
+        
+       }
+    
+        
+     .header__item{
+            display: inline;
+            margin-right: 51px;
+            color:white;
+           
+        }
+    
+        .header__button
+        .btn
+        {position: absolute;
+            padding: 5px;
+            left: 15px;
+            top: 35px;
+            border: none;
+            font-size: 20px;
+            line-height: 20px;
+            color:white;
+            background-color: #3f51b505;
+          
+        }  
+        @media (min-width:400px){
+            button{display: none;}
+        }
+        .header__main{
+            position: absolute;
+        
+            width: 100%;
+            height: 275px;       
+            left: 0;
+            right: 0;
+            background: #d65a3e url(../image/bigimage.jpg.jpg)   no-repeat center;
+            filter: opacity(75%);
+            background-blend-mode: hard-light,multiply,lighten;
+            background-size:140%;
+
+            @include isDesktop
+            {
+                width: 100%;
+                height: 768px;
+              
+            }
+        }
+            
+
+        
+           
+        .title{
+            width: 100%;
+            padding-top: 35px;
+            padding-left: 70px;
+
+            @include isDesktop{
+                padding-top: 0px;
+        }}
+            
+            
+            .title{
+               &__main{
+                  
+                   height: 29px;
+                  
+               &--big{   
+                   font-size: 24px;
+                   font-weight: bold;
+                   margin-bottom: 50px;
+                   margin-left: 50px;
+                   color: white;
+
+                  
+                }}}
+
+                  
+            .title {
+               &__name{
+                height: 29px;
+              
+                   
+               &--big{   
+                font-size: 20px;
+                font-weight: normal;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                color: white;
+                
+                @include isDesktop{
+                    font-style: normal;
+                    font-size: 48px;
+                    color: white;
+                    padding-left: 30px
+                    
+                   
+                    
+            }}}
+
+               
+
+             .title{
+               &__local{
+                
+                width: 181px;
+                height: 16px;
+               
+            &--big{   
+                font-size: 13px;
+                font-weight: normal;
+                margin-bottom: 13px;
+                margin-left: 30px;
+                color: white;
+                @include isDesktop{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 24px;
+                    padding-left: 30px;
+                    margin-bottom: 106px;
+
+        
+             }}}}
+
+             .title{
+               &__last{
+                position: absolute;
+                width: 79px;
+                height: 16px;
+                padding-left: 146px;
+                padding-top: 209px;
+            &--big{   
+                font-size: 13px;
+                font-weight: normal;
+                margin-bottom: 70px;
+                margin-left: 70px;
+                text-decoration-line:underline ;
+                color: white;
+
+                @include isDesktop{
+                    
+                    font-size: 18px;
+                    font-weight: normal;
+                    padding-left: 5px;
+                    
+
+
+
+                }
+            
+            }}}}
+            
+            
+      //*header end*//       
+   
+    
+    .figcaption__about {
+        position: absolute;
+        width: 100%;
+        top: 275px;
+
+        @include isDesktop{
+            top: 768px;
+            position: absolute;
+            width: 100%;
+            height: 544px;
+
+            
+            padding-right:60px;
+            padding-left: 60px;
+        }}
+    
+    
+    .figcaption__text{
+       padding: 34px 29px;}
+
+    .figcaption{
+       &__caption{
+           width: 72px;
+           height: 29px;
+           padding-left: 120px;
+           padding-right: 130px;
+           top: 25px;
+       &--great{
+           font-style: normal;
+           font-weight: 600;
+           font-size: 24px;
+           line-height: 29px;
+           color: #333333;
+
+           @include isDesktop{
+               font-weight: bold;
+               color:#333333;
+               padding-left: initial;
+           }
+        
+        }}}
+
+    .figcaption{      
+
+        &__specific{
+            width: 312px;
+            height: 212px;
+            padding-left: 34px;
+            padding-right: 29px;
+            top: 348px;
+        &--big {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 15px;
+            color: #333333;
+
+            @include isDesktop{
+                width: 100%;
+                padding-top: 70px;
+                font-size: 18px;
+                color: #333333;
+                text-align: justify;
+                line-height: normal;
+                padding-left: initial;
+                padding-right: initial;
+
+            }
+        
+        }
+ 
+
+        }  }
+
+//*figcaption__about end*//
+
+.row{
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+width: 100%;}
+
+[class*="col-"] {
+    width: 100%;
+    
+}
+
+.col-lg-7{
+    @include isDesktop{
+    padding-top: 150px;
+}}
+
+.section-skills{
+
+
+    @include isDesktop{
+        width: 349px;
+    }
+    
+    
+}
+ .skills__section{
+       position: absolute;
+       width: 100%;
+       height: 617px;
+       top: 600px;
+       background-color: #FFFAF2;
+       padding: 20px 20px;
+
+       @include isDesktop{
+        position: absolute;
+        width: 100%;
+        height: 593px;
+        top: 1212px;
+        background-color: #FFFAF2;
+        padding-right:60px;
+        padding-left: 60px;
+       }
+       
+   }
+
+   .section{
+       &__topic{
+           width: 62px;
+           height: 29px;
+           padding-left: 130px;
+           padding-right: 130px;
+       &--great{
+           font-style: normal;
+           font-weight: 600;
+           font-size: 24px;
+           line-height: 29px;
+           color: #333333;
+           margin-bottom: 25px;
+
+           @include isDesktop{
+               font-weight: bold;
+               line-height: 29px;
+               margin-top: 90px;
+               padding-left: initial;
+
+
+
+       }  }} }
+       
+  .section__picture  {
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-bottom: 23px;
+
+      @include isDesktop{
+       padding: 0;
+       margin: 0;
+  }}
+
+  .picture__image{
+      background-image: url(../image/ProfilePicture.jpg.jpg);
+      width: 224px;
+      height: 218px;
+      background-size:100% ;
+      @include isDesktop{
+
+        width: 290px;
+        height: 280px;
+
+
+      } }
+  .section__mainprofile{
+
+    width: 100%;
+
+  }
+      
+ .section__mainprofile{
+     
+    @include isDesktop{
+        width: 530px;
+        height: 400px;
+
+ }}
+
+ 
+  .profile__table{
+      display: flex;
+      justify-content: space-between;
+  }    
+  
+  .profile{
+      &__activ{
+          width: 39px;
+          height: 25px;
+
+      &--main{
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          color: #333333;
+
+          @include isDesktop{
+              width:58px ;
+              font-size: 18px;
+              line-height: 25px;
+        
+        }}}}
+
+    .profile{
+
+      &__special{
+          width: 211px;
+          height: 25px;
+        
+      &--best{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          color: #333333;
+          margin-bottom: 31px;
+
+          @include isDesktop{
+
+            width: 316px;
+            font-size: 18px;
+            line-height: 25px;
+
+          }}}}
+
+    .profile{
+
+      &__dev{
+        width: 82px;
+        height: 25px;
+        
+      &--good{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        color: #333333;
+        margin-bottom: 9px;
+
+        @include isDesktop{
+            width: 123px;
+            font-size: 18px;
+            line-height: 25px;
+
+
+
+      }}}}
+       
+     
+     .profile__progressbar1{
+         background-image: url(../image/ProgressBar1.jpg.jpg) ;
+         width: 211px;
+         height: 18px;
+         background-size: 100%;
+
+         @include isDesktop{
+
+            width: 350px;
+            height: 24px;
+
+     }}
+
+     .profile{
+
+        &__tools1{
+            width: 31px;
+            height: 25px;
+            
+
+        &--modern{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            color: #333333;
+
+            @include isDesktop{
+                width: 46px;
+                font-size: 18px;
+                line-height: 25px;
+           
+        } }}   }
+     
+     .profile{
+
+        &__IT{
+            width: 211px;
+            height: 25px;
+            left: 132px;
+            
+       
+        &--modern{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            color: #333333;
+    
+            margin-bottom:13px;
+
+            @include isDesktop{
+                width: 272px;
+                font-size: 18px;
+                line-height: 25px;
+
+
+
+
+        }}}}
+        
+    
+    
+         .profile{
+
+                &__design{
+                    width: 55px;
+                    height: 25px;
+                    
+                    
+               
+                &--good{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #333333;
+            
+                    margin-bottom:13px;
+
+                    @include isDesktop{ 
+                        width: 82px;
+                        font-size: 18px;
+                        line-height: 25px;
+
+
+                }}}
+            }
+       
+         .profile__progressbar2{
+                    background-image: url(../image/ProgressBar2.jpg.jpg) ;
+                    width: 211px;
+                    height: 18px;
+                    background-size: 100%;
+                    @include isDesktop{
+
+                        width: 350px;
+                        height: 24px;
+
+
+                }}
+
+         .profile{
+
+                    &__nextools{
+                        width: 51px;
+                        height: 25px;
+                        
+                        
+                   
+                    &--good{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #333333;
+
+                        @include isDesktop{
+                            width: 46px;
+                            font-size: 18px;
+                            line-height: 25px;
+                
+                       
+                    }}}}
+
+            .profile{
+                &__web{
+
+                    width: 211px;
+                    height: 25px;
+
+                &--next{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    color: #333333;
+                    margin-bottom:13px ;
+
+                    @include isDesktop{
+                   width: 277px;
+                   font-size: 18px;
+                   line-height: 25px;
+
+
+                }    
+                } }  }   
+                    
+               
+         .profile{
+
+            &__Research{
+                width: 74px;
+                height: 25px;
+                
+                
+           
+            &--good{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                color: #333333;
+                margin-bottom:13px ;
+
+                @include isDesktop{
+                    width: 111px;
+                    font-size: 18px;
+
+               
+            }}}}
+           
+            .profile__progressbar3{
+                background-image: url(../image/ProgressBar3.jpg.jpg) ;
+                width: 211px;
+                height: 18px;
+                background-size: 100%;
+
+                @include isDesktop{
+
+                    width: 350px;
+                    height: 24px;
+            }}
+              
+            
+            .profile{
+
+                &__lastools{
+                    width: 31px;
+                    height: 25px;
+                    
+                    
+               
+                &--good{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: #333333;
+
+                    @include isDesktop{
+                        width: 46px;
+                        font-size: 18px;
+                        line-height: 25px;
+            
+                   
+                }}}}
+      
+                .profile{
+
+                    &__lweb{
+                        width: 211px;
+                        height: 25px;
+                        
+                    &--last{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        color: #333333;
+                        margin-bottom: 25px;
+
+                        @include isDesktop{
+                            width: 174px;
+                            font-size: 18px;
+                            line-height: 25px;
+                
+                       
+                    }}}}
+          
+      //* section__profile end*//
+
+      .portfolio__section{
+        position: absolute;
+        width: 100%;
+        height: 404px;
+        top: 1185px;
+        padding: 20px 20px;
+
+        @include isDesktop{
+        height: 722px;
+        top: 1800px;
+        padding-right:60px;
+        padding-left: 60px;
+    
+    }}
+
+      .portfolio{
+          &__rubric{
+              width: 101px;
+              height: 29px;
+              padding-left: 110px;
+              padding-top: 25px;
+              margin-bottom: 35px;
+
+          &--great{
+              font-style: normal;
+              font-weight: 600;
+              font-size: 24px;
+              color: #333333;
+
+              @include isDesktop{
+                  font-weight: bold;
+                  font-size: 24px;
+                  line-height: 29px;
+                  padding-left: inherit;
+                  margin-bottom: 70px;
+
+          } }}  }
+
+       .portfolio{
+          &__subrubric{
+            
+            height: 20px;
+            padding-left: 120px;
+            margin-bottom: 15px;
+
+         &--best{
+             font-style: normal;
+             font-weight: 500;
+             font-size: 14px;
+             color: #333333;
+
+             @include isDesktop{
+                height: 25px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                padding-left: inherit;
+}
+
+         }}}
+
+         .section-research{
+
+            @include isDesktop{
+                width: 300px;
+
+            }
+         }
+
+         .portfolio{
+            &__text{
+              height: 71px;
+              padding-left: 20px;
+              padding-right: 20px;
+              
+  
+           &--long{
+               font-style: normal;
+               font-weight: normal;
+               font-size: 12px;
+               color: #333333;
+
+               @include isDesktop{
+                   width: 300px;
+                   height: 137px;
+                   font-size: 16px;
+                   
+                   text-align: justify;
+                   padding-left: inherit;
+
+               
+
+           }}}}
+     .section-imagePortfolio{    
+        width: 100%;
+        height: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-flow: column wrap;
+     
+           
+
+            @include isDesktop{
+                width: 550px;
+                height: 400px;
+                padding-left: 20px;
+                padding-right: 20px;
+                display: flex;
+                flex-flow: column wrap;
+                margin-bottom: 33px;
+
+            }}
+
+           
+
+    
+          .image__rectangle1{
+              background-image: url(../image/Rectangle1.jpg.jpg);
+              width: 170px;
+              height: 69px;
+              background-size: 100%;
+              margin-bottom: 12px;
+
+              @include isDesktop{
+                  width: 300px;
+                  height: 110px;
+                  background-size: 100%;
+
+              }
+          }
+
+          .image__rectangle2{
+            background-image: url(../image/Rectangle2.jpg.jpg) ;
+            width: 169px;
+            height: 113px;
+            background-size: 100%;
+
+            @include isDesktop{
+                width: 300px;
+                height: 200px;
+                background-size: 100%; 
+            }
+        }
+       
+        .image__dom-luis{
+            background-image: url(../image/dom-luis-bridge-portocarol-japp.jpg.jpg) ;
+            width: 120px;
+            height: 114px;
+           
+            left: 225px;
+            background-size: 100%;
+            margin-bottom: 11px;
+
+            @include isDesktop{
+               
+                width: 192px;
+                height: 200px;
+                left: 773px;
+                margin-bottom: 13px;
+
+        }}
+
+        .image__smallimage{
+            background-image: url(../image/smallimage.jpg.jpg);
+           
+            width: 120px;
+            height: 69px;
+            left: 225px;
+            top: 333px;
+            background-size: 100%;
+
+            @include isDesktop{
+                width: 192px;
+                height: 110px;
+                left: 773px;
+                top: 380px;
+                 
+        
+        }}
+
+        //*.portfolio__section end*//
+
+    .contact__footer{
+        position: absolute;
+        width: 100%;
+        height: 360px;
+        top: 1590px;
+        padding: 20px 20px;
+        background: #FFFAF2;
+
+        @include isDesktop{
+            top: 2400px;
+            height: 580px;
+            padding-left: 60px;
+            padding-right: 60px;
+}          
+
+    }
+
+    .contact{
+        &__get{
+            height: 29px;
+            padding-left: 90px;
+            margin-bottom: 25px;
+
+
+        &--general{
+            font-weight: 600;
+            font-size: 24px;
+            color: #333333;
+            
+            @include isDesktop{
+                padding-left: initial;
+        }}}}
+
+     
+
+     .contact{
+         &__list{
+           position: absolute;
+           width: 61px;
+           height: 161px;
+           display: flex;
+           flex-wrap: wrap;
+           padding-left: 20px;
+
+          
+        &--first{
+            font-weight: normal;
+            font-size: 14px;
+            color: #333333;
+
+            @include isDesktop{
+                padding-left: initial;
+                font-size: 18px;
+        }}}}
+            
+
+    .contact{
+        &__email{
+            position: absolute;
+            height: 39px;
+            padding-left: 20px;
+            top: 271px;
+
+         &--second{
+             font-weight: normal;
+             font-size: 14px;
+             color: #333333;
+             line-height: 22px;
+
+             @include isDesktop{
+                 top: 71px;
+                 font-size: 18px;
+                 line-height: 24px;
+
+         } }}}
+
+     .contact{
+         &__network{
+            position: absolute;
+            width: 67px;
+            height: 125px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 200px;
+
+         &--social{
+             font-style: normal;
+             font-weight: normal;
+             font-size: 14px;
+             color: #333333;
+            
+         }}}
+
+
+
+
+
+           
+
+        
+         @include generate-columns-desktop();
+
+         
+        
+
+        
+
+       
+
+
+
+
+
+    
+    
+
+
+             
+
+
+            
