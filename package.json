@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/oxana2381/lesson-12-hw#readme",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   }
 }
